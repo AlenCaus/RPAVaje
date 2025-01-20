@@ -102,7 +102,7 @@
             buttonIzracunPovprecja.Name = "buttonIzracunPovprecja";
             buttonIzracunPovprecja.Size = new Size(394, 34);
             buttonIzracunPovprecja.TabIndex = 1;
-            buttonIzracunPovprecja.Text = "Povprečna Ocena";
+            buttonIzracunPovprecja.Text = "Izračunaj povprečje";
             buttonIzracunPovprecja.UseVisualStyleBackColor = false;
             buttonIzracunPovprecja.Click += buttonIzracunPovprecja_Click;
             // 
