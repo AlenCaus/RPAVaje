@@ -47,19 +47,21 @@
             radioButtonVisoka = new RadioButton();
             label1 = new Label();
             comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textZadeva = new TextBox();
+            textPrejemnik = new TextBox();
             comboBox2 = new ComboBox();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            textSporocilo = new TextBox();
             buttonPoslji = new Button();
             checkBoxZapomni = new CheckBox();
             menuStrip1 = new MenuStrip();
             seznamPrejemnikovToolStripMenuItem = new ToolStripMenuItem();
             seznamPoslanihSporočilToolStripMenuItem = new ToolStripMenuItem();
             novoSporočiloToolStripMenuItem = new ToolStripMenuItem();
+            textBox2 = new TextBox();
+            label2 = new Label();
+            textPosiljatelj = new TextBox();
             tableLayoutPanel1.SuspendLayout();
             tableLayoutPanel2.SuspendLayout();
             tableLayoutPanel3.SuspendLayout();
@@ -74,43 +76,46 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 100F));
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60F));
-            tableLayoutPanel1.Controls.Add(labelPrejemnik, 0, 1);
-            tableLayoutPanel1.Controls.Add(labelKopijacc, 0, 2);
-            tableLayoutPanel1.Controls.Add(labelSkritaKopijaBcc, 0, 3);
-            tableLayoutPanel1.Controls.Add(labelZadeva, 0, 4);
-            tableLayoutPanel1.Controls.Add(labelSMTPStreznik, 0, 5);
-            tableLayoutPanel1.Controls.Add(labelUporabniskoIme, 0, 7);
-            tableLayoutPanel1.Controls.Add(labelFormat, 0, 6);
-            tableLayoutPanel1.Controls.Add(labelPrioriteta, 2, 6);
-            tableLayoutPanel1.Controls.Add(labelGeslo, 2, 7);
-            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 6);
-            tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 3, 6);
-            tableLayoutPanel1.Controls.Add(label1, 0, 8);
-            tableLayoutPanel1.Controls.Add(comboBox1, 1, 2);
-            tableLayoutPanel1.Controls.Add(textBox1, 1, 4);
-            tableLayoutPanel1.Controls.Add(textBox2, 1, 3);
-            tableLayoutPanel1.Controls.Add(textBox3, 1, 1);
-            tableLayoutPanel1.Controls.Add(comboBox2, 1, 5);
-            tableLayoutPanel1.Controls.Add(textBox4, 1, 7);
-            tableLayoutPanel1.Controls.Add(textBox5, 3, 7);
-            tableLayoutPanel1.Controls.Add(textBox6, 1, 8);
-            tableLayoutPanel1.Controls.Add(buttonPoslji, 3, 9);
-            tableLayoutPanel1.Controls.Add(checkBoxZapomni, 0, 9);
+            tableLayoutPanel1.Controls.Add(labelPrejemnik, 0, 2);
+            tableLayoutPanel1.Controls.Add(labelKopijacc, 0, 3);
+            tableLayoutPanel1.Controls.Add(labelSkritaKopijaBcc, 0, 4);
+            tableLayoutPanel1.Controls.Add(labelZadeva, 0, 5);
+            tableLayoutPanel1.Controls.Add(labelSMTPStreznik, 0, 6);
+            tableLayoutPanel1.Controls.Add(labelUporabniskoIme, 0, 8);
+            tableLayoutPanel1.Controls.Add(labelFormat, 0, 7);
+            tableLayoutPanel1.Controls.Add(labelPrioriteta, 2, 7);
+            tableLayoutPanel1.Controls.Add(labelGeslo, 2, 8);
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel2, 1, 7);
+            tableLayoutPanel1.Controls.Add(tableLayoutPanel3, 3, 7);
+            tableLayoutPanel1.Controls.Add(label1, 0, 9);
+            tableLayoutPanel1.Controls.Add(comboBox1, 1, 3);
+            tableLayoutPanel1.Controls.Add(textZadeva, 1, 5);
+            tableLayoutPanel1.Controls.Add(textPrejemnik, 1, 2);
+            tableLayoutPanel1.Controls.Add(comboBox2, 1, 6);
+            tableLayoutPanel1.Controls.Add(textBox4, 1, 8);
+            tableLayoutPanel1.Controls.Add(textBox5, 3, 8);
+            tableLayoutPanel1.Controls.Add(textSporocilo, 1, 9);
+            tableLayoutPanel1.Controls.Add(buttonPoslji, 3, 10);
+            tableLayoutPanel1.Controls.Add(checkBoxZapomni, 0, 10);
             tableLayoutPanel1.Controls.Add(menuStrip1, 0, 0);
+            tableLayoutPanel1.Controls.Add(textBox2, 1, 4);
+            tableLayoutPanel1.Controls.Add(label2, 0, 1);
+            tableLayoutPanel1.Controls.Add(textPosiljatelj, 1, 1);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 10;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 30.76923F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
+            tableLayoutPanel1.RowCount = 11;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 36F));
             tableLayoutPanel1.Size = new Size(902, 487);
             tableLayoutPanel1.TabIndex = 0;
             tableLayoutPanel1.Paint += tableLayoutPanel1_Paint;
@@ -119,7 +124,7 @@
             // 
             labelPrejemnik.Anchor = AnchorStyles.Right;
             labelPrejemnik.AutoSize = true;
-            labelPrejemnik.Location = new Point(63, 45);
+            labelPrejemnik.Location = new Point(63, 80);
             labelPrejemnik.Name = "labelPrejemnik";
             labelPrejemnik.Size = new Size(74, 20);
             labelPrejemnik.TabIndex = 1;
@@ -129,7 +134,7 @@
             // 
             labelKopijacc.Anchor = AnchorStyles.Right;
             labelKopijacc.AutoSize = true;
-            labelKopijacc.Location = new Point(57, 82);
+            labelKopijacc.Location = new Point(57, 116);
             labelKopijacc.Name = "labelKopijacc";
             labelKopijacc.Size = new Size(80, 20);
             labelKopijacc.TabIndex = 2;
@@ -139,7 +144,7 @@
             // 
             labelSkritaKopijaBcc.Anchor = AnchorStyles.Right;
             labelSkritaKopijaBcc.AutoSize = true;
-            labelSkritaKopijaBcc.Location = new Point(9, 119);
+            labelSkritaKopijaBcc.Location = new Point(9, 152);
             labelSkritaKopijaBcc.Name = "labelSkritaKopijaBcc";
             labelSkritaKopijaBcc.Size = new Size(128, 20);
             labelSkritaKopijaBcc.TabIndex = 3;
@@ -149,7 +154,7 @@
             // 
             labelZadeva.Anchor = AnchorStyles.Right;
             labelZadeva.AutoSize = true;
-            labelZadeva.Location = new Point(79, 156);
+            labelZadeva.Location = new Point(79, 188);
             labelZadeva.Name = "labelZadeva";
             labelZadeva.Size = new Size(58, 20);
             labelZadeva.TabIndex = 4;
@@ -159,7 +164,7 @@
             // 
             labelSMTPStreznik.Anchor = AnchorStyles.Right;
             labelSMTPStreznik.AutoSize = true;
-            labelSMTPStreznik.Location = new Point(35, 193);
+            labelSMTPStreznik.Location = new Point(35, 224);
             labelSMTPStreznik.Name = "labelSMTPStreznik";
             labelSMTPStreznik.Size = new Size(102, 20);
             labelSMTPStreznik.TabIndex = 5;
@@ -169,7 +174,7 @@
             // 
             labelUporabniskoIme.Anchor = AnchorStyles.Right;
             labelUporabniskoIme.AutoSize = true;
-            labelUporabniskoIme.Location = new Point(15, 267);
+            labelUporabniskoIme.Location = new Point(15, 296);
             labelUporabniskoIme.Name = "labelUporabniskoIme";
             labelUporabniskoIme.Size = new Size(122, 20);
             labelUporabniskoIme.TabIndex = 7;
@@ -179,7 +184,7 @@
             // 
             labelFormat.Anchor = AnchorStyles.Right;
             labelFormat.AutoSize = true;
-            labelFormat.Location = new Point(81, 230);
+            labelFormat.Location = new Point(81, 260);
             labelFormat.Name = "labelFormat";
             labelFormat.Size = new Size(56, 20);
             labelFormat.TabIndex = 6;
@@ -189,7 +194,7 @@
             // 
             labelPrioriteta.Anchor = AnchorStyles.Right;
             labelPrioriteta.AutoSize = true;
-            labelPrioriteta.Location = new Point(431, 230);
+            labelPrioriteta.Location = new Point(431, 260);
             labelPrioriteta.Name = "labelPrioriteta";
             labelPrioriteta.Size = new Size(70, 20);
             labelPrioriteta.TabIndex = 13;
@@ -199,7 +204,7 @@
             // 
             labelGeslo.Anchor = AnchorStyles.Right;
             labelGeslo.AutoSize = true;
-            labelGeslo.Location = new Point(455, 267);
+            labelGeslo.Location = new Point(455, 296);
             labelGeslo.Name = "labelGeslo";
             labelGeslo.Size = new Size(46, 20);
             labelGeslo.TabIndex = 14;
@@ -213,12 +218,12 @@
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Controls.Add(radioButtonText, 0, 0);
             tableLayoutPanel2.Controls.Add(radioButtonHTML, 1, 0);
-            tableLayoutPanel2.Location = new Point(146, 225);
+            tableLayoutPanel2.Location = new Point(146, 255);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel2.Size = new Size(251, 31);
+            tableLayoutPanel2.Size = new Size(251, 30);
             tableLayoutPanel2.TabIndex = 15;
             // 
             // radioButtonText
@@ -255,12 +260,12 @@
             tableLayoutPanel3.Controls.Add(radioButtonObicajna, 0, 0);
             tableLayoutPanel3.Controls.Add(radioButtonSrednja, 1, 0);
             tableLayoutPanel3.Controls.Add(radioButtonVisoka, 2, 0);
-            tableLayoutPanel3.Location = new Point(507, 225);
+            tableLayoutPanel3.Location = new Point(507, 255);
             tableLayoutPanel3.Name = "tableLayoutPanel3";
             tableLayoutPanel3.RowCount = 1;
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tableLayoutPanel3.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tableLayoutPanel3.Size = new Size(392, 31);
+            tableLayoutPanel3.Size = new Size(392, 30);
             tableLayoutPanel3.TabIndex = 16;
             // 
             // radioButtonObicajna
@@ -303,7 +308,7 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Location = new Point(64, 296);
+            label1.Location = new Point(64, 324);
             label1.Name = "label1";
             label1.Size = new Size(73, 20);
             label1.TabIndex = 17;
@@ -314,43 +319,34 @@
             comboBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             tableLayoutPanel1.SetColumnSpan(comboBox1, 3);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(143, 78);
+            comboBox1.Location = new Point(143, 112);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(756, 28);
             comboBox1.TabIndex = 18;
             // 
-            // textBox1
+            // textZadeva
             // 
-            textBox1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.SetColumnSpan(textBox1, 3);
-            textBox1.Location = new Point(143, 153);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(756, 27);
-            textBox1.TabIndex = 19;
+            textZadeva.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(textZadeva, 3);
+            textZadeva.Location = new Point(143, 184);
+            textZadeva.Name = "textZadeva";
+            textZadeva.Size = new Size(756, 27);
+            textZadeva.TabIndex = 19;
             // 
-            // textBox2
+            // textPrejemnik
             // 
-            textBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.SetColumnSpan(textBox2, 3);
-            textBox2.Location = new Point(143, 116);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(756, 27);
-            textBox2.TabIndex = 20;
-            // 
-            // textBox3
-            // 
-            textBox3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            tableLayoutPanel1.SetColumnSpan(textBox3, 3);
-            textBox3.Location = new Point(143, 42);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(756, 27);
-            textBox3.TabIndex = 21;
+            textPrejemnik.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(textPrejemnik, 3);
+            textPrejemnik.Location = new Point(143, 76);
+            textPrejemnik.Name = "textPrejemnik";
+            textPrejemnik.Size = new Size(756, 27);
+            textPrejemnik.TabIndex = 21;
             // 
             // comboBox2
             // 
             comboBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(143, 189);
+            comboBox2.Location = new Point(143, 220);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(258, 28);
             comboBox2.TabIndex = 22;
@@ -358,7 +354,7 @@
             // textBox4
             // 
             textBox4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox4.Location = new Point(143, 264);
+            textBox4.Location = new Point(143, 292);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(258, 27);
             textBox4.TabIndex = 23;
@@ -366,25 +362,25 @@
             // textBox5
             // 
             textBox5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            textBox5.Location = new Point(507, 264);
+            textBox5.Location = new Point(507, 292);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(392, 27);
             textBox5.TabIndex = 24;
             // 
-            // textBox6
+            // textSporocilo
             // 
-            tableLayoutPanel1.SetColumnSpan(textBox6, 3);
-            textBox6.Dock = DockStyle.Fill;
-            textBox6.Location = new Point(143, 299);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(756, 143);
-            textBox6.TabIndex = 25;
+            tableLayoutPanel1.SetColumnSpan(textSporocilo, 3);
+            textSporocilo.Dock = DockStyle.Fill;
+            textSporocilo.Location = new Point(143, 327);
+            textSporocilo.Multiline = true;
+            textSporocilo.Name = "textSporocilo";
+            textSporocilo.Size = new Size(756, 121);
+            textSporocilo.TabIndex = 25;
             // 
             // buttonPoslji
             // 
             buttonPoslji.Anchor = AnchorStyles.Right;
-            buttonPoslji.Location = new Point(805, 451);
+            buttonPoslji.Location = new Point(805, 454);
             buttonPoslji.Name = "buttonPoslji";
             buttonPoslji.Size = new Size(94, 29);
             buttonPoslji.TabIndex = 26;
@@ -398,9 +394,9 @@
             tableLayoutPanel1.SetColumnSpan(checkBoxZapomni, 3);
             checkBoxZapomni.Dock = DockStyle.Fill;
             checkBoxZapomni.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            checkBoxZapomni.Location = new Point(3, 448);
+            checkBoxZapomni.Location = new Point(3, 454);
             checkBoxZapomni.Name = "checkBoxZapomni";
-            checkBoxZapomni.Size = new Size(498, 36);
+            checkBoxZapomni.Size = new Size(498, 30);
             checkBoxZapomni.TabIndex = 27;
             checkBoxZapomni.Text = "Zapomni si pošiljatelja in SMTP Strežnik";
             checkBoxZapomni.UseVisualStyleBackColor = true;
@@ -414,27 +410,56 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { seznamPrejemnikovToolStripMenuItem, seznamPoslanihSporočilToolStripMenuItem, novoSporočiloToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(902, 37);
+            menuStrip1.Size = new Size(902, 36);
             menuStrip1.TabIndex = 28;
             menuStrip1.Text = "menuStrip1";
             // 
             // seznamPrejemnikovToolStripMenuItem
             // 
             seznamPrejemnikovToolStripMenuItem.Name = "seznamPrejemnikovToolStripMenuItem";
-            seznamPrejemnikovToolStripMenuItem.Size = new Size(161, 33);
+            seznamPrejemnikovToolStripMenuItem.Size = new Size(161, 32);
             seznamPrejemnikovToolStripMenuItem.Text = "Seznam prejemnikov";
             // 
             // seznamPoslanihSporočilToolStripMenuItem
             // 
             seznamPoslanihSporočilToolStripMenuItem.Name = "seznamPoslanihSporočilToolStripMenuItem";
-            seznamPoslanihSporočilToolStripMenuItem.Size = new Size(192, 33);
+            seznamPoslanihSporočilToolStripMenuItem.Size = new Size(192, 32);
             seznamPoslanihSporočilToolStripMenuItem.Text = "Seznam poslanih sporočil";
+            seznamPoslanihSporočilToolStripMenuItem.Click += seznamPoslanihSporocilToolStripMenuItem_Click;
             // 
             // novoSporočiloToolStripMenuItem
             // 
             novoSporočiloToolStripMenuItem.Name = "novoSporočiloToolStripMenuItem";
-            novoSporočiloToolStripMenuItem.Size = new Size(125, 33);
+            novoSporočiloToolStripMenuItem.Size = new Size(125, 32);
             novoSporočiloToolStripMenuItem.Text = "Novo sporočilo";
+            // 
+            // textBox2
+            // 
+            textBox2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(textBox2, 3);
+            textBox2.Location = new Point(143, 148);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(756, 27);
+            textBox2.TabIndex = 20;
+            // 
+            // label2
+            // 
+            label2.Anchor = AnchorStyles.Right;
+            label2.AutoSize = true;
+            label2.Location = new Point(65, 44);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 20);
+            label2.TabIndex = 29;
+            label2.Text = "Pošiljatelj";
+            // 
+            // textPosiljatelj
+            // 
+            textPosiljatelj.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            tableLayoutPanel1.SetColumnSpan(textPosiljatelj, 3);
+            textPosiljatelj.Location = new Point(143, 40);
+            textPosiljatelj.Name = "textPosiljatelj";
+            textPosiljatelj.Size = new Size(756, 27);
+            textPosiljatelj.TabIndex = 30;
             // 
             // Form1
             // 
@@ -466,7 +491,6 @@
         private Label labelSMTPStreznik;
         private Label labelFormat;
         private Label labelUporabniskoIme;
-        private Panel panel1;
         private Panel panel2;
         private Label labelPrioriteta;
         private Label labelGeslo;
@@ -480,18 +504,20 @@
         private RadioButton radioButtonHTML;
         private Label label1;
         private ComboBox comboBox1;
-        private TextBox textBox1;
+        private TextBox textZadeva;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textPrejemnik;
         private ComboBox comboBox2;
         private TextBox textBox4;
         private TextBox textBox5;
-        private TextBox textBox6;
+        private TextBox textSporocilo;
         private Button buttonPoslji;
         private CheckBox checkBoxZapomni;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem seznamPrejemnikovToolStripMenuItem;
         private ToolStripMenuItem seznamPoslanihSporočilToolStripMenuItem;
         private ToolStripMenuItem novoSporočiloToolStripMenuItem;
+        private Label label2;
+        private TextBox textPosiljatelj;
     }
 }
